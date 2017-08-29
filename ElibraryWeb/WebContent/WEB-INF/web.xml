@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ElibraryWeb</display-name>
+  <context-param>
+    <param-name>DB_URL</param-name>
+    <param-value>jdbc:mysql://localhost:3306/studentdb</param-value>
+  </context-param>
+  <context-param>
+    <param-name>DB_USER</param-name>
+    <param-value>root</param-value>
+  </context-param>
+  <context-param>
+    <param-name>DB_PASSWORD</param-name>
+    <param-value>root</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <servlet-class>com.fiem.elibrary.login.RegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <url-pattern>/RegistrationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>com.fiem.elibrary.controller.WelcomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/WelcomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.fiem.elibrary.login.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UploadBookServlet</servlet-name>
+    <servlet-class>com.fiem.elibrary.controller.UploadBookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadBookServlet</servlet-name>
+    <url-pattern>/UploadBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SearchBookServlet</servlet-name>
+    <servlet-class>com.fiem.elibrary.controller.SearchBookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchBookServlet</servlet-name>
+    <url-pattern>/SearchBookServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PDFServlet</servlet-name>
+    <servlet-class>com.fiem.elibrary.controller.PDFServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PDFServlet</servlet-name>
+    <url-pattern>/PDFServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
