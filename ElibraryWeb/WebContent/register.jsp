@@ -37,7 +37,7 @@
 						<td>Display Name</td>
 						<td> <input type="text" name="name"  /> </td>
 					</tr>	
-					<tr>
+					<tr> 
 						<td>Phone No</td>
 						<td><input type="text" name="phone" /></td>
 					</tr>					
