@@ -69,7 +69,8 @@
 		
 		</div>
 </form>		
-
-<%@include file="./footer.jsp" %>
-</body>
+<FOOTER>
+		<%@include file="./footer.jsp" %>
+</FOOTER>
+	</body>
 </html>
