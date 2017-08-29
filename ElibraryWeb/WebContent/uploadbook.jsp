@@ -35,11 +35,11 @@
 						<td>Genre</td>
 						<td> <select name="genre" >
 								<option value="0">Select</option>
-								<option value="Story">Story</option>
-								<option value="Article">Article </option>
-								<option value="Java">Java</option>
-								<option value="Journals">Journals</option>
-								<option value="Comics">Comics</option> 
+								<option value="Story">Story  Book</option>
+								<option value="Article">Article Book </option>
+								<option value="Java">Java  Book</option>
+								<option value="Journals">Journals  Book</option>
+								<option value="Comics">Comics Book</option> 
 						
 							</select>
 						 </td>
