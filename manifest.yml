@@ -1,0 +1,6 @@
+applications:
+- name: elibraryweb
+  disk_quota: 512M
+  domain: mybluemix.net
+  instances: 1
+  memory: 512M
